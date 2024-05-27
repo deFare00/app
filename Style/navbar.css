@@ -1,0 +1,19 @@
+.nav_img {
+    border-radius: 5px;
+}
+
+.nav-link {
+    color: #9CA3AF;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
