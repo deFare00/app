@@ -1,0 +1,24 @@
+body {
+    background-color: #0d1425;
+  }
+  .article-section {
+    padding: 60px 0;
+    background-color: #0d1425;
+  }
+  .article-content {
+    color: #FFFFFF;
+  }
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .article-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .article-author {
+    margin-top: 20px;
+    font-style: italic;
+    color: #9CA3AF;
+  }

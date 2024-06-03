@@ -1,3 +1,31 @@
 html {
     background-color: #0D1425;
 }
+
+ /* CSS for hover effect */
+ .themed-grid-col {
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(71 85 105);
+    background-color: #0D1526;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+
+  .themed-grid-col:hover {
+    background-color: #1F2940; /* New background color on hover */
+  }
+
+  .themed-grid-col a {
+    text-decoration: none;
+    color: #9CA3AF;
+  }
+
+  .themed-grid-col:hover a {
+    color: #FFFFFF; /* Change text color on hover */
+  }
+
+  

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Learn Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../Style/navbar.css">
+    <link rel="stylesheet" href="../../Style/style-guides/languages-master.css">
+    <style>
+      body {
+        background-color: #0D1526;
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0D1425">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="#">
+          <img class="nav_img" src="../../assets/Icons/logo.png" alt="Logo Image" width="30px" height="30px">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../index.html">Start Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-regular fa-map" style="width: 30px; height: 30px;"></i>
+                    Topics</a>
+                  </li>
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-solid fa-check" style="width: 30px; height: 30px;"></i>
+                    Best Practices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item gap-2 fw-medium" href="#">
+                      <i class="fa-regular fa-circle-question" style="width: 30px; height: 30px;"></i>
+                      Questions</a>
+                    </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex gap-2 mt-3 mt-md-0" style="margin-right: 60px;">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Article start-->
+    <section class="article-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="article-title" style="color: white;">20 Backend Project Ideas to take you from Beginner to Pro</h2>
+              <p class="article-content" style="text-align: left;">As backend developers, showcasing our work to others is not straightforward, given that what we do is not very visible.</p>
+              <p class="article-content" style="text-align: left;">That said, having a project portfolio, even as backend developers, it’s very important, as it can lead to new job opportunities.</p>
+              <p class="article-content" style="text-align: left;">As an added bonus, the experience you get out of the entire process of building the apps for your portfolio will help you improve your coding skills.</p>
+              <p class="article-content" style="text-align: left;">Let’s take a look at 20 of the best backend projects you can work on to improve both your project portfolio and to <strong>learn backend development</strong>.</p>
+              <p class="article-content" style="text-align: left;">Keep in mind that these project ideas are organized from easiest to hardest to complete, and the entire list should take you at least a year to complete, if you’re not rushing the process.</p>
+              <p class="article-content" style="text-align: left;">So sit back, grab a cup of your favorite hot drink, and let’s get started!</p>
+            
+              <p class="article-author" style="text-align: right;"><a href="https://roadmap.sh/authors/fernando" style="text-decoration: none;">Written by Fernando Doglio</a></p>
+
+              <h3 class="article-content" style="color: white; text-align: left;">1. Personal Blogging Platform API</h3>
+              <p style="color: white; text-align: left;"><strong>Difficulty</strong>: Easy</p>
+              <p style="color: white; text-align: left;"><strong>Skills and technologies used</strong>: CRUD for main operations, databases (SQL or NoSQL), server-side RESTful API.</p>
+              <img src="https://assets.roadmap.sh/guest/blogging-platform-api.png" alt="" style="width: 800px;">
+              <p class="article-content" style="text-align: left;">Let’s start with a very common one when it comes to backend projects.</p>
+              <p class="article-content" style="text-align: left;">This is a RESTful API that would power a personal blog. This implies that you’d have to create a backend API with the following responsibilities:</p>
+              <ul style="color: white; text-align: left;">
+                <li>Return a list of articles. You can add filters such as publishing date, or tags.</li>
+                <li>Return a single article, specified by the ID of the article.</li>
+                <li>Create a new article to be published.</li>
+                <li>Delete a single article, specified by the ID.</li>
+                <li>Update a single article, again, you’d specify the article using its ID.</li>
+              </ul>
+              <p style="color: white; text-align: left;">And with those endpoints you’ve covered the basic CRUD operations (Create, Read, Update and Delete).</p>
+              <p style="color: white; text-align: left;">As a recommendation for techstack, you could use <strong>Fastify</strong> as the main backend framework if you’re going with Node, or perhaps <strong>Django</strong> for Python or even <strong>Ruby on Rails</strong> or <strong>Sinatra</strong> for Ruby. As for your database, you could use <strong>MongoDB</strong> if you want to try NoSQL or <strong>MySQL</strong> if you’re looking to get started with relational databases first.</p>
+
+              <h3 class="article-content" style="color: white; text-align: left;">2. To-Do List API</h3>
+              <p style="color: white; text-align: left;"><strong>Difficulty</strong>: Easy</p>
+              <p style="color: white; text-align: left;"><strong>Skills and technologies used</strong>: REST API design, JSON, basic authentication middleware.</p>
+              <img src="https://assets.roadmap.sh/guest/todo-list-api-bsrdd.png" alt="" style="width: 800px;">
+              <p class="article-content" style="text-align: left;">We’re continuing with the APIs for our backend project ideas, this time around for a To-Do application. Why is it different from the previous one?</p>
+              <p class="article-content" style="text-align: left;">While the previous project only focused on the main CRUD operations, here we’ll add some more interesting responsibilities, such as:</p>
+              <ul style="color: white; text-align: left;">
+                <li>An authentication logic, which means you’ll have to keep a new table of users and their credentials</li>
+                <li>You’ll have to create both users and tasks.</li>
+                <li>You’ll also have to be able to update tasks (their status) and even delete them.</li>
+                <li>Get a list of tasks, filter them by status and get the details of each one.</li>
+              </ul>
+              <p style="color: white; text-align: left;">You’re free to implement this with whatever programming language and framework you want, however, you could continue using the same stack from the previous project.</p>
+
+              <h3 class="article-content" style="color: white; text-align: left;">3. Weather API Wrapper Service</h3>
+              <p style="color: white; text-align: left;"><strong>Difficulty</strong>: Easy</p>
+              <p style="color: white; text-align: left;"><strong>Skills and technologies used</strong>: Third-party API integration, caching strategy, environment variable management.</p>
+              <img src="https://assets.roadmap.sh/guest/weather-api-f8i1q.png" alt="" style="width: 800px;">
+              <p class="article-content" style="text-align: left;">Let’s take our API magic to the next level with this new backend project. Now instead of just relying on a database, we’re going to tackle two new topics:</p>
+              <ul style="color: white; text-align: left;">
+                <li>Using external services.</li>
+                <li>Adding caching through the use of a quick in-memory storage.</li>
+              </ul>
+              <p style="color: white; text-align: left;">As for the actual weather API to use, you can use your favorite one, as a suggestion, here is a link to <strong>Visual Crossing’s API</strong>, it’s completely FREE and easy to use.</p>
+              <p style="color: white; text-align: left;">Regarding the in-memory cache, a pretty common recommendation is to use <strong>Redis</strong>, and as a recommendation, you could use the city code entered by the user as the key, and save there the result from calling the API.</p>
+              <p style="color: white; text-align: left;">At the same time, when you “set” the value in the cache, you can also give it an expiration time in seconds (using the EX flag on the <strong>SET command</strong>). That way the cache (the keys) will automatically clean itself when the data is old enough (for example, giving it a 12-hours expiration time).</p>
+
+              <h4 class="article-content" style="color: white; text-align: left;">For more information you can visit <a href="https://roadmap.sh/backend/languages">this article!</a></h4>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--Article end-->
+
+    <hr style="border-color: #1E293C;">
+
+    <!--Footer start-->
+    <footer class="text-white pt-4" style="background-color: #0a1120;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>D-Learn Code by <strong>Defa</strong></h5>
+            <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html" class="text-white" style="text-decoration: none;">Start Here</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">About Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Topics</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Best Practices</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 D-Learn Code. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34843ba7a9.js" crossorigin="anonymous"></script>
+    <script src="Script/dropdown-nav.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
