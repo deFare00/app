@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Learn Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../Style/navbar.css">
+    <style>
+      body {
+        background-color: #0D1425;
+      }
+
+      .video-card {
+        margin-bottom: 20px;
+        height: 400px; /* Fixed height for consistency */
+      }
+      .video-card iframe {
+        width: 100%;
+        height: 215px; /* Fixed height for the iframe */
+      }
+      .toggle-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .toggle-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #1E293C;
+        color: white;
+        cursor: pointer;
+      }
+      .toggle-buttons button.active {
+        background-color: #0a1120;
+      }
+      .content-section {
+        display: none;
+      }
+      .content-section.active {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0D1425">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="#">
+          <img class="nav_img" src="../../assets/Icons/logo.png" alt="Logo Image" width="30px" height="30px">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Start Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-regular fa-map" style="width: 30px; height: 30px;"></i>
+                    Topics</a>
+                  </li>
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-solid fa-check" style="width: 30px; height: 30px;"></i>
+                    Best Practices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item gap-2 fw-medium" href="#">
+                      <i class="fa-regular fa-circle-question" style="width: 30px; height: 30px;"></i>
+                      Questions</a>
+                    </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex gap-2 mt-3 mt-md-0" style="margin-right: 60px;">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Video content start-->
+    <div class="container mt-5">
+        <h1 class="text-center" style="color: white;">Backend Beginner</h1>
+        <h3 class="text-center mb-4" style="color: white;">Step by step videos to become a backend developer</h3>
+
+        <div class="toggle-buttons">
+            <button class="active" onclick="toggleContent('eng')">ENG</button>
+            <button onclick="toggleContent('idn')">IDN</button>
+        </div>
+
+        <div class="content-section active" id="content-eng">
+            <h4 class="text-left" style="color: white;">PROGRAMMING LANGUAGES</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/A74TOX803D0?si=-4aGOuXaYeWKAeWt" title="Learn Java Programming for Beginners" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Java Programming for Beginners – Full Course</h5>
+                            <p class="card-text">Learn the Java programming language in this complete beginner's course. Video by freeCodeCamp.org</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk?si=aWkZ0ZTMDjpiJyvZ" title="Learn The Basic of JS" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour</h5>
+                            <p class="card-text">This beginner-friendly tutorial covers everything you need to start coding. Video by Programming with Mosh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/XKHEtdqhLK8?si=MBfexHFcL8UJwgeHG" title="Python Full Course" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Python Full Course for free</h5>
+                            <p class="card-text">Python tutorial for beginners full course. Video by Bro Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">RELATIONAL DATABASE</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=QSLmRYmp0D6YZGA_&amp;list=PLL_LQvNX4xKxq57Vs1PYCfH6FI4socDWS" title="PostgreSQL" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Complete PostgreSQL Course for Beginners</h5>
+                            <p class="card-text">Complete PostgreSQL Course for Beginners" is a playlist that covers everything from basic setup to advanced optimization techniques, designed to give new users a comprehensive understanding of PostgreSQL. Video by Manish Sharma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/SycDH3NSJUU?si=dNSC6_0UxZYHxAbq" title="MySQL Course" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">MySQL Tutorial For Beginners</h5>
+                            <p class="card-text">In this MYSQL Full Coursetutorial by Simplilearn we will discuss everything about SQL using MYSQL Database, starting from the basics to the advanced topics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/_AMj02sANpI?si=rG68vXT29xNyuq4H" title="MariaDB Course" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">MariaDB Tutorial For Beginners in One Hour</h5>
+                            <p class="card-text">MariaDB Server is one of the most popular open source relational databases. It’s made by the original developers of MySQL and guaranteed to stay open source. Video by develop with Ahmad Mohey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">LEARN ABOUT APIs</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=LF2qbQi_tNIgN9bT&amp;list=PLqwmiTs6Z6PG9-0JT_Zt_gKCxyshjCwEA" title="Rest API Course" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Rest API Master Course</h5>
+                            <p class="card-text">Learning programming and framework is not enough in the world of REST. Video by JR ACADEMY</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=6lppQtzFUOuosfbQ&amp;list=PLC3y8-rFHvwhc9YZIdqNL5sWeTCGxF4ya" title="JSON API Course" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">JSON Server Tutorial for Beginners</h5>
+                            <p class="card-text">JSON server is an npm package that lets you create fake REST APIs with zero coding. Video by Codevolution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="content-idn">
+            <h4 class="text-left" style="color: white;">PROGRAMMING LANGUAGES</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/jiUxHm9l1KY?si=TI6TtW1rTEUYuPJn" title="Tutorial JAVA" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">TUTORIAL JAVA DASAR BAHASA INDONESIA</h5>
+                            <p class="card-text">Di materi ini kita akan belajar dasar-dasar bahasa pemrograman Java. Video by Programmer Zaman Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=DJDVdBI-HWKMVoiI&amp;list=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w" title="Belajar Javascript" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Dasar Pemrograman dengan Javascript</h5>
+                            <p class="card-text">Penjelasan mengenai Javascript untuk pemula. Video by Web Programming UNPAS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=wtGCEpk28amWQEIw&amp;list=PLZS-MHyEIRo59lUBwU-XHH7Ymmb04ffOY" title="Belajar Python" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Python Bahasa Indonesia</h5>
+                            <p class="card-text">Mari kita bahas apa itu python dan kenapa harus belajar python. Video by Kelas Terbuka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">RELATIONAL DATABASE</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=vD-ZSJParn1NpDiQ&amp;list=PLhzwHCJWMbnsIWnGC4KVI5YrVJt7VX1Ld" title="Learn PostgreSQL" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Postgresql Tutorial Indonesia</h5>
+                            <p class="card-text">Ini merupakan database cukup populer yaitu postgresql, database ini bersifat open source, tingg kunjungi saja postgresql.org. Video by Pojok Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=3Nu-tWOvAuPA8sfy&amp;list=PL-CtdCApEFH_P2_2zR6pvDublvpD3fF6W" title="Learn MySQL" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">TUTORIAL MYSQL</h5>
+                            <p class="card-text">Belajar Database MySQL untuk Pemula sampai Mahir. Video by Programmer Zaman Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=ne7lxW7xJhNaRnXG&amp;list=PL2O3HdJI4voGs6CiEUPXwt1fhLLqu30E_" title="Learn MariaDB" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Tutorial Belajar Database MySQL | MariaDB</h5>
+                            <p class="card-text">Belajar MySQL serta MariaDB untuk pemula. Video by Creative Indonesia Belajar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">LEARN ABOUT APIs</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=wWhrio8PSR76nAZk&amp;list=PL-CtdCApEFH-g0XS7fraWEZ28M8DiykC4" title="Learn Restful API" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar RESTful API</h5>
+                            <p class="card-text">Belajar RESTful API. Video by Programmer Zaman Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=fYXrW23GvE9hXaNk&amp;list=PLJ_2_JcZ_v8ZoSePsWiWfEDQIDhX92m4A" title="JSON API" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar API, JSON</h5>
+                            <p class="card-text">Belajar API JSON. Video by Web Programming UNPAS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <button class="btn btn-primary prev-btn">Previous</button>
+            <button class="btn btn-primary next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Video content end -->
+
+    <hr style="border-color: #1E293C;">
+
+    <!--Footer start-->
+    <footer class="text-white pt-4" style="background-color: #0a1120;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>D-Learn Code by <strong>Defa</strong></h5>
+            <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html" class="text-white" style="text-decoration: none;">Start Here</a></li>
+              <li><a href="../about.html" class="text-white" style="text-decoration: none;">About Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Topics</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Best Practices</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 D-Learn Code. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34843ba7a9.js" crossorigin="anonymous"></script>
+    <script src="Script/dropdown-nav.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleContent(lang) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            document.querySelectorAll('.toggle-buttons button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+            document.querySelector('.toggle-buttons button[onclick="toggleContent(\'' + lang + '\')"]').classList.add('active');
+        }
+    </script>
+</body>
+</html>
