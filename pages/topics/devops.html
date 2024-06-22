@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Learn Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../Style/navbar.css">
+    <style>
+      body {
+        background-color: #0D1425;
+      }
+
+      .video-card {
+        margin-bottom: 20px;
+        height: 400px; /* Fixed height for consistency */
+      }
+      .video-card iframe {
+        width: 100%;
+        height: 215px; /* Fixed height for the iframe */
+      }
+      .toggle-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .toggle-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #1E293C;
+        color: white;
+        cursor: pointer;
+      }
+      .toggle-buttons button.active {
+        background-color: #0a1120;
+      }
+      .content-section {
+        display: none;
+      }
+      .content-section.active {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0D1425">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="#">
+          <img class="nav_img" src="../../assets/Icons/logo.png" alt="Logo Image" width="30px" height="30px">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Start Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-regular fa-map" style="width: 30px; height: 30px;"></i>
+                    Topics</a>
+                  </li>
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-solid fa-check" style="width: 30px; height: 30px;"></i>
+                    Best Practices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item gap-2 fw-medium" href="#">
+                      <i class="fa-regular fa-circle-question" style="width: 30px; height: 30px;"></i>
+                      Questions</a>
+                    </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex gap-2 mt-3 mt-md-0" style="margin-right: 60px;">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Video content start-->
+    <div class="container mt-5">
+        <h1 class="text-center" style="color: white;">DevOps</h1>
+        <h3 class="text-center mb-4" style="color: white;">Step by step guide for DevOps, SRE or any other Operations Role</h3>
+
+        <div class="toggle-buttons">
+            <button class="active" onclick="toggleContent('eng')">ENG</button>
+            <button onclick="toggleContent('idn')">IDN</button>
+        </div>
+
+        <div class="content-section active" id="content-eng">
+            <h4 class="text-left" style="color: white;">OPERATING SYSTEMS</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/X1CM3rZwGn8?si=HjuLUMtAcPDG_xNk" title="YouTube video player" title="Learn Windows" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">you NEED to learn Windows RIGHT NOW!!</h5>
+                            <p class="card-text">In this video, NetworkChuck introduces you to Windows and demonstrates how you can get started down this path. Video by NetworkChuck</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/sWbUDq4S6Y8?si=Shz5I59h51eObKU2" title="Learn Linux" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Linux – Full Course for Beginners</h5>
+                            <p class="card-text">This course will teach you how to navigate Linux's Graphical User Interfaces and powerful command line tool ecosystem. Video by freeCodeCamp.org</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/vLPdBp9vv9Y?si=bSe70oxnWcp1ZTRm" title="Learn Unix" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to UNIX</h5>
+                            <p class="card-text">This UNIX Tutorial video will help you get started with  Unix Administration. Video by Edureka!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">VCS HOSTING</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/tRZGeaHPoaw?si=LrDl-vzlwpTYTgFK" title="Learn Github" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Git and GitHub Tutorial for Beginners</h5>
+                            <p class="card-text">In this step-by-step tutorial, learn how to use Git and GitHub for source control management (SCM). Video by Kevin Stratvert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/8aV5AxJrHDg?si=8BR8FvLT9oYDUY1r" title="Learn Gitlab" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Learn GitLab in 3 Hours</h5>
+                            <p class="card-text">This GitLab tutorial will teach you everything you need to know about GitLab. Video by LambdaTest</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/1tC6Z57AOkY?si=o0_xhwwL0LlzqJhy" title="Learn Bitbucket" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Git Tutorial - Git Crash Course using BitBucket</h5>
+                            <p class="card-text">In this tutorial, we go through how to use Git for complete beginners. Video by Emad Zaamout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">CI/CD TOOL</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/mFFXuXjVgkU?si=mFnOTB9kTNBp0Va0" title="Learn Github CI" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Github Actions CI/CD</h5>
+                            <p class="card-text">Video includes an explanation of what Github Actions is and a lab you can follow along with. Video by DevOps Journey</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/qP8kir2GUgo?si=Yzpm9CnuQLByR-gI" title="Learn Gitlab CI" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">GitLab CI CD Tutorial for Beginners</h5>
+                            <p class="card-text">Learn GitLab CI/CD by building a complete CICD pipeline for a python demo project | with Docker. Video by TechWorld with Nana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/_XaYv9zvHUk?si=rSm7HXRY2720r-33" title="Learn Circle CI" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">CircleCI Tutorial for Beginners</h5>
+                            <p class="card-text">This CircleCI tutorial covers everything from the basics of CircleCI to how a CircleCI pipeline works. Video by LambdaTest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="content-idn">
+            <h4 class="text-left" style="color: white;">OPERATING SYSTEMS</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=7lFwtx9sSzlwEuKO&amp;list=PLI3JRBDM4PcNnRdFI3PS9WSvRlz6rKIWd" title="Tutorial Microsoft" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Microsoft Windows 10 Untuk Pemula</h5>
+                            <p class="card-text">Playlist ini berisikan video mengenai Microsoft Windows. Video by Irwansight</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=GLZGK9Rs0-Fv5VtE&amp;list=PLEISSzFRcLcuDK5PFnSFz6YEhjf8I5-6a" title="Belajar Linux" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Linux Untuk Pemula</h5>
+                            <p class="card-text">Kumpulan video belajar linux untuk pemula dalam bahasa indonesia. Video by Henri Studio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=1hb1HEyiV3isxzHH&amp;list=PLy1o1-E7dlzUb8KtBOmws2QjhFuuZ06J6" title="Belajar Unix" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Unix</h5>
+                            <p class="card-text">Kumpulan video belajar unix. Video by Zainudin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">VCS HOSTING</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=f9Ou1Yunl8wLNcX4&amp;list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf" title="Belajar Github" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">GIT & GITHUB</h5>
+                            <p class="card-text">Di video kali ini, kita akan bahas tentang materi GIT dan GITHUB. Video by Web Programming UNPAS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/2VDFOht9vCw?si=wtLojzyHgnb6htXn" title="Belajar Gitlab" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">GitLab Dasar Clone, Add, Commit dan Push</h5>
+                            <p class="card-text">Belajar Gitlab clone, add, commit, dan push. Video by Gumi ID Production</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/E1YuGCHnl1k?si=fI1vXnG9xbt4XPYo" title="Belajar Bitbucket" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar BitBucket Pipelines Dasar</h5>
+                            <p class="card-text">Pada kesempatan kali ini kita akan belajar tentang Bitbucket Pipelines Dasar. Video by DevOps with Dian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">CI/CD TOOL</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/pvPJARjqAa8?si=ZGWHLXTGFxTSpWo3" title="Belajar Github CI" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar CI/CD Dengan Github Actions (Deploy Aplikasi NodeJS Ke VPS Linux)</h5>
+                            <p class="card-text">Sekarang kita coba make Ci/CD Untuk mempermudah proses perilisan / penggelaran (Deployment) Aplikasi kita. Proses CI meminimalisir bug pada kode program yang kita tulis. Video by Iqbal Syamil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/5xWYFE3DZkk?si=ZtXggnDnypa9MF78" title="Belajar Gitlab CI" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Belajar Continous Integration dan Continous Deployment Docker dengan Gitlab CI CD</h5>
+                            <p class="card-text">Belajar Pengenalan Continous Integration dan Continous Deployment Docker dengan Gitlab CI CD untuk mendeploy static web menggunakan NGINX. Video by DevOps & Cloud with Aryya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/5KP9khJMJ8o?si=3yrqVBlqmQiZZRtG" title="CI/CD Pipeline" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Apa Itu CI/CD? Belajar Membuat CI/CD Pipeline di Cloud</h5>
+                            <p class="card-text">Apa sih CI/CD? Untuk apa? Cara bikin CICD pipeline gimana? Hubungannya sama cloud apa? yuk belajar bareng. Video by Cloud Engineering with Imre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <button class="btn btn-primary prev-btn">Previous</button>
+            <button class="btn btn-primary next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Video content end -->
+
+    <hr style="border-color: #1E293C;">
+
+    <!--Footer start-->
+    <footer class="text-white pt-4" style="background-color: #0a1120;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>D-Learn Code by <strong>Defa</strong></h5>
+            <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html" class="text-white" style="text-decoration: none;">Start Here</a></li>
+              <li><a href="../about.html" class="text-white" style="text-decoration: none;">About Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Topics</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Best Practices</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 D-Learn Code. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34843ba7a9.js" crossorigin="anonymous"></script>
+    <script src="Script/dropdown-nav.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleContent(lang) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            document.querySelectorAll('.toggle-buttons button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+            document.querySelector('.toggle-buttons button[onclick="toggleContent(\'' + lang + '\')"]').classList.add('active');
+        }
+    </script>
+</body>
+</html>

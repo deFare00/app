@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Learn Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../Style/navbar.css">
+    <style>
+      body {
+        background-color: #0D1425;
+      }
+
+      .video-card {
+        margin-bottom: 20px;
+        height: 400px; /* Fixed height for consistency */
+      }
+      .video-card iframe {
+        width: 100%;
+        height: 215px; /* Fixed height for the iframe */
+      }
+      .toggle-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .toggle-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #1E293C;
+        color: white;
+        cursor: pointer;
+      }
+      .toggle-buttons button.active {
+        background-color: #0a1120;
+      }
+      .content-section {
+        display: none;
+      }
+      .content-section.active {
+        display: block;
+      }
+      .accordion-button {
+        background-color: #1E293C;
+        color: white;
+      }
+      .accordion-button:focus {
+        box-shadow: none;
+      }
+      .accordion-button:not(.collapsed) {
+        color: white;
+        background-color: #0a1120;
+      }
+      .accordion-body {
+        background-color: #1E293C;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0D1425">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="#">
+          <img class="nav_img" src="../../assets/Icons/logo.png" alt="Logo Image" width="30px" height="30px">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Start Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-regular fa-map" style="width: 30px; height: 30px;"></i>
+                    Topics</a>
+                  </li>
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-solid fa-check" style="width: 30px; height: 30px;"></i>
+                    Best Practices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item gap-2 fw-medium" href="#">
+                      <i class="fa-regular fa-circle-question" style="width: 30px; height: 30px;"></i>
+                      Questions</a>
+                    </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex gap-2 mt-3 mt-md-0" style="margin-right: 60px;">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Content start-->
+    <div class="container my-5">
+        <h2 class="text-white text-center">CSS Questions & Answers</h2>
+        <div class="accordion mt-4" id="cssQA">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is CSS?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be rendered on screen, on paper, in speech, or on other media.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is the box model in CSS?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        The box model in CSS describes the rectangular boxes generated for elements in the document tree and consists of margins, borders, padding, and the actual content area. Understanding the box model is crucial for layout control.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What are CSS selectors?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        CSS selectors are patterns used to select elements on a webpage. Examples include class selectors (e.g., <code>.classname</code>), ID selectors (e.g., <code>#idname</code>), and element selectors (e.g., <code>elementname</code>).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What is the difference between inline, block, and inline-block elements in CSS?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        Inline elements do not start on a new line and only take up as much width as necessary (e.g., <code>&lt;span&gt;</code>). Block elements start on a new line and take up the full width available (e.g., <code>&lt;div&gt;</code>). Inline-block elements are like inline elements but can have a width and height set (e.g., <code>&lt;img&gt;</code>).
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What is a CSS pseudo-class?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        A CSS pseudo-class is a keyword added to selectors that specifies a special state of the selected elements. Examples include <code>:hover</code> for when an element is being hovered over, <code>:focus</code> for when an element has focus, and <code>:nth-child()</code> for selecting elements based on their position in a group of siblings.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        How do CSS flexbox and grid layouts differ?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        Flexbox is designed for one-dimensional layouts, allowing you to align items along a single axis (horizontal or vertical). Grid, on the other hand, is designed for two-dimensional layouts, allowing you to control the layout in both rows and columns.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        What is a CSS preprocessor?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        A CSS preprocessor is a scripting language that extends CSS and compiles it into regular CSS. Examples include Sass, Less, and Stylus. Preprocessors allow for variables, nested rules, functions, and other features to make CSS more maintainable and extendable.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        What are CSS transitions?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        CSS transitions allow you to change property values smoothly (over a given duration) instead of instantly. You can define which properties will change and the duration of the change, providing a way to create animations without using JavaScript.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        How can you center an element horizontally and vertically in CSS?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        To center an element horizontally and vertically in CSS, you can use flexbox:
+                        <pre><code> 
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set a height */
+}
+.child {
+  /* Child element styles */
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        What is responsive design in CSS?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#cssQA">
+                    <div class="accordion-body">
+                        Responsive design in CSS refers to creating web pages that look good on all devices and screen sizes. This is typically achieved using fluid grids, flexible images, and media queries to adjust the layout and styling based on the device's characteristics.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Content end-->
+    
+    <hr style="border-color: #1E293C;">
+
+    <!--Footer start-->
+    <footer class="text-white pt-4" style="background-color: #0a1120;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>D-Learn Code by <strong>Defa</strong></h5>
+            <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html" class="text-white" style="text-decoration: none;">Start Here</a></li>
+              <li><a href="../about.html" class="text-white" style="text-decoration: none;">About Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Topics</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Best Practices</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 D-Learn Code. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34843ba7a9.js" crossorigin="anonymous"></script>
+    <script src="Script/dropdown-nav.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var accButtons = document.querySelectorAll(".accordion-button");
+        accButtons.forEach(button => {
+          button.addEventListener("click", function() {
+            accButtons.forEach(btn => btn.classList.add("collapsed"));
+            button.classList.toggle("collapsed");
+          });
+        });
+      });
+    </script>
+</body>
+</html>

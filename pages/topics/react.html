@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Learn Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../Style/navbar.css">
+    <style>
+      body {
+        background-color: #0D1425;
+      }
+
+      .video-card {
+        margin-bottom: 20px;
+        height: 400px; /* Fixed height for consistency */
+      }
+      .video-card iframe {
+        width: 100%;
+        height: 215px; /* Fixed height for the iframe */
+      }
+      .toggle-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .toggle-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #1E293C;
+        color: white;
+        cursor: pointer;
+      }
+      .toggle-buttons button.active {
+        background-color: #0a1120;
+      }
+      .content-section {
+        display: none;
+      }
+      .content-section.active {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #0D1425">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="#">
+          <img class="nav_img" src="../../assets/Icons/logo.png" alt="Logo Image" width="30px" height="30px">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Start Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" style="width: 200px;">
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-regular fa-map" style="width: 30px; height: 30px;"></i>
+                    Topics</a>
+                  </li>
+                <li>
+                  <a class="dropdown-item gap-2 fw-medium" href="#">
+                    <i class="fa-solid fa-check" style="width: 30px; height: 30px;"></i>
+                    Best Practices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item gap-2 fw-medium" href="#">
+                      <i class="fa-regular fa-circle-question" style="width: 30px; height: 30px;"></i>
+                      Questions</a>
+                    </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <form class="d-flex gap-2 mt-3 mt-md-0" style="margin-right: 60px;">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Video content start-->
+    <div class="container mt-5">
+        <h1 class="text-center" style="color: white;">React Native Developer</h1>
+        <h3 class="text-center mb-4" style="color: white;">Step by step guide to becoming a React Native developer</h3>
+
+        <div class="toggle-buttons">
+            <button class="active" onclick="toggleContent('eng')">ENG</button>
+            <button onclick="toggleContent('idn')">IDN</button>
+        </div>
+
+        <div class="content-section active" id="content-eng">
+            <h4 class="text-left" style="color: white;">INTRODUCTION</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/X8ipUgXH6jw?si=WfvT3BmyBGMWfo12" title="YouTube video player" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React Native vs Flutter - I built the same chat app with both</h5>
+                            <p class="card-text">A side-by-side comparison of React Native and Flutter. Video by Fireship</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/MSgIRdyJ6rk?si=mjI-XNaiTW2IpNwI" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React Native vs React JS in 2024: Differences and Shared Features</h5>
+                            <p class="card-text">React JS and React Native are two popular technologies that are often mistaken for each other. Video by Kodaps Academy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/Xwk4rcB6qVQ?si=kOUP4eaBwWBErIcQ" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">THE React Native Tech Stack for 2024 😎</h5>
+                            <p class="card-text">We talk about UI libraries, state management, routing, and all the choices you must make when building a React Native app in 2024. Video by Simon Grimm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">ENVIRONMENT SETUP</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/f6TXEnHT_Mk?si=3u2Zxnjua9qcynxR" title="Environtment Setup" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Expo Dev Environment Setup for your first React Native project (Windows)</h5>
+                            <p class="card-text">This video will walk you through your Expo development environment setup for Windows users before you start building your first React Native project. Video by notJust.dev</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/y6DwGxe2E_k?si=3vmOSfbIZVot5Lpk" title="Environment Setup" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">How to setup React Native with Expo quickly</h5>
+                            <p class="card-text">In this video you will learn how to setup React Native using Expo very quickly! Expo is the world’s most loved ecosystem of tools for React Native. Video by Cosden Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/S_FxR061rrA?si=VjWX6ocgxXIb7xQZ" title="Environment Setup" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">How to Setup Environment Variables in React Native Expo</h5>
+                            <p class="card-text">In this tutorial, you will learn how to set up environment variables in your React Native Expo project. Video by BERTDELASPEED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">DEVELOPMENT WORKFLOW</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/B98mC0Hm7Ds?si=5VvmiBAxjGieH-9N" title="Development Workflow" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React Native Tutorial - 4 - Running App on Device</h5>
+                            <p class="card-text">Learning running app on device for react native. Video by Codevolution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/BayDYRigP5I?si=0jHur_fNJZ8uoFrz" title="Development Workflow" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Debugging React Native Apps</h5>
+                            <p class="card-text">Learn debugging react native apps. Video by Hitesh Choudhary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="content-idn">
+            <h4 class="text-left" style="color: white;">INTRODUCTION</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/bSLGgJC0C9k?si=3FUri04d4bArLbER" title="YouTube video player" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Pengenalan React Native - Apa itu React Native | Kenapa Memilih React Native</h5>
+                            <p class="card-text">Materi dasar ini akan sangat cocok sekali bagi rekan-rekan yang belum mengenal sama sekali dunia pemrograman, atau bisa dikatakan React Native adalah Framework pertama yang rekan-rekan pelajari. Video by Prawito Hudoro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/HemUb7XEpUY?si=laksBgBwWu1Sw_l-" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React JS sama React Native emangnya beda?</h5>
+                            <p class="card-text">Selama ini banyak banget yang nanyain apa bedanya React Native sama React JS. Supaya gampang jelasinnya nieh Coding.ID udah kasih penjelasannya nieh buat kalian semua. Video by Coding ID</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/oSBDNF895ZQ?si=ZWY2HQW9mkUltvnD" title="Introduction" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React Native dan Flutter emang bedanya apa?</h5>
+                            <p class="card-text">Perbedaan React Native dan Flutter. Video by Coding ID</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">ENVIRONMENT SETUP</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=exQ8MUmR2R8bJUxv&amp;list=PL1Z-C0_J_9dYEobXl1Dkj5QmlU087j07W" title="Environtment Setup" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">React Native Expo 2023</h5>
+                            <p class="card-text">Playlist mengenai React Native Expo. Video by notJust.dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-left" style="color: white;">DEVELOPMENT WORKFLOW</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=XOmlMDitvHgbRgKb&amp;list=PLIan8aHxsPj2NeWJew3o86bSptVPXOppa" title="Development Workflow" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Tutorial React Native Bahasa Indonesia (Futsal App)</h5>
+                            <p class="card-text">Materi kali ini yaitu Tutorial React Native Bahasa Indonesia dengan kasus Aplikasi Futsal. Cocok untuk Pemula yang baru belajar Develop untuk Aplikasi Mobile. Video by Wahidev Academy</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card video-card">
+                        <iframe src="https://www.youtube.com/embed/videoseries?si=34bumcNwE3RcvdNn&amp;list=PLIan8aHxsPj1ElRUs0MYWaAkTFNn2E_Gd" title="Development Workflow" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Tutorial React Native Bahasa Indonesia (Laundry App)</h5>
+                            <p class="card-text">Materi kali ini yaitu Tutorial React Native Bahasa Indonesia dengan kasus Aplikasi Laundry. Cocok untuk Pemula yang baru belajar Develop untuk Aplikasi Mobile. Video by Wahidev Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <button class="btn btn-primary prev-btn">Previous</button>
+            <button class="btn btn-primary next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Video content end -->
+
+    <hr style="border-color: #1E293C;">
+
+    <!--Footer start-->
+    <footer class="text-white pt-4" style="background-color: #0a1120;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>D-Learn Code by <strong>Defa</strong></h5>
+            <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html" class="text-white" style="text-decoration: none;">Start Here</a></li>
+              <li><a href="../about.html" class="text-white" style="text-decoration: none;">About Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Topics</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Best Practices</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Facebook</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Twitter</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Instagram</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 D-Learn Code. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34843ba7a9.js" crossorigin="anonymous"></script>
+    <script src="Script/dropdown-nav.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleContent(lang) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById('content-' + lang).classList.add('active');
+
+            document.querySelectorAll('.toggle-buttons button').forEach(function(button) {
+                button.classList.remove('active');
+            });
+            document.querySelector('.toggle-buttons button[onclick="toggleContent(\'' + lang + '\')"]').classList.add('active');
+        }
+    </script>
+</body>
+</html>
